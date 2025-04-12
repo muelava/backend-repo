@@ -34,3 +34,38 @@ This is the backend code for the project. It handles the server-side operations,
 ```bash
 git clone https://github.com/muelava/backend-repo.git
 cd backend-repo
+```
+
+### 2. Install dependencies
+
+Make sure you have Node.js and npm installed. Then, run the following command to install the necessary dependencies:
+
+```bash
+npm install
+```
+
+### 3. Create .env file
+
+Create a .env file in the root of the project and add the following variables (make sure to replace the values with your own credentials):
+
+```bash
+FIREBASE_PROJECT_ID=your-firebase-project-id
+FIREBASE_PRIVATE_KEY=your-private-key
+FIREBASE_CLIENT_EMAIL=your-client-email
+PORT=5000
+```
+
+### 4. Create .env file
+
+To run the backend server locally, use the following command:
+
+```bash
+npm run dev
+```
+
+
+Example:
+```bash
+GET http://localhost:5000/api/fetch-user-data
+Authorization: Bearer <JWT-Token>
+```
